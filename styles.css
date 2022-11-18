@@ -146,7 +146,7 @@ nav ul a:hover {
 #locations {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.504), transparent),
-    url(/img/new-york-page.webp);
+    url(img/new-york-page.webp);
   background-size: cover;
   background-position: center;
   display: flex;
