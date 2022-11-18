@@ -1,0 +1,457 @@
+/* Global Styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+button {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  padding: 1.7rem 2.5rem;
+  background-color: rgb(19, 36, 49);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.7s ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(68, 49, 44);
+}
+
+/* header section */
+
+.main-head {
+  background-color: rgb(19, 28, 39);
+  color: white;
+  z-index: 3;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  min-height: 9vh;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  padding: 1.7rem;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul a {
+  padding: 1.5rem 2rem;
+  transition: background-color 0.75s ease-in-out, color 0.5s ease-in-out;
+}
+
+nav ul a:hover {
+  background-color: white;
+  color: #131c27;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
+    url(/img/landing-page.webp);
+  height: 91vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero h2 {
+  text-shadow: 5px 5px 50px black;
+  font-size: calc(3rem + 1vw);
+}
+
+.hero h4 {
+  padding: 5rem 0;
+  text-shadow: -5px -5px 15px black;
+  font-size: calc(2.3rem + 0.4vw);
+  font-weight: normal;
+}
+
+/* Location Section*/
+
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.504), transparent),
+    url(/img/new-york-page.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.locations-head {
+  width: 90%;
+  margin: auto;
+  z-index: 2;
+}
+
+.locations-head h2 {
+  padding: 1rem 0;
+  text-decoration: underline;
+  font-size: calc(3rem + 1vw);
+  color: rgba(19, 28, 39, 0.9);
+}
+
+.locations-head h4 {
+  background: linear-gradient(#131c27, rgb(99, 74, 68));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: calc(2.3rem + 0.4vw);
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  pointer-events: none;
+}
+
+.moving-cloud-1 {
+  width: 70%;
+  z-index: 0;
+  opacity: 0.8;
+  animation: movingCloud 8s infinite alternate ease-in-out;
+}
+
+.moving-cloud-2 {
+  width: 50%;
+  z-index: -1;
+  opacity: 0.38;
+  animation: movingCloud 5s infinite alternate ease-in-out;
+}
+
+@keyframes movingCloud {
+  from {
+    transform: translate(10%, -10%);
+  }
+
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* benifits */
+
+.benefits-head {
+  background-color: #131c27ec;
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 0;
+  color: white;
+  z-index: 1;
+}
+
+.benefits-head h4 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+.benefits-head h2 {
+  font-size: 3.5rem;
+}
+
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 65vh;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.card {
+  flex: 1 1 25px;
+  margin: 2rem 5rem;
+  min-height: 40vh;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1),
+    10px 0px 10px rgba(0, 0, 0, 0.01);
+  min-width: 25rem;
+  text-align: center;
+}
+
+.card h3,
+.card p {
+  padding: 1rem 1rem 1.5rem;
+  line-height: 1.8;
+}
+
+.cards img {
+  max-width: 15%;
+  margin: 1.5rem;
+}
+
+.card-icon {
+  background-color: rgba(68, 49, 44, 0.911);
+}
+
+/* Contact */
+
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.504), transparent),
+    url(/img/contact-mountain.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.form-wrapper {
+  background-color: rgba(19, 28, 39, 0.8);
+  width: 60%;
+  color: white;
+  border-radius: 20px;
+}
+
+.form-head {
+  padding: 4rem 3rem;
+  text-align: center;
+}
+
+.name-form,
+.email-form,
+.message-form {
+  padding: 3rem;
+  text-align: center;
+}
+
+textarea {
+  font-size: 1.8rem;
+}
+
+form label {
+  margin: 0 1rem;
+}
+
+form button {
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 4rem;
+  background-color: #27405f;
+}
+
+form input {
+  padding: 0.7rem 2rem;
+}
+
+::placeholder {
+  font-size: 1.7rem;
+}
+
+/* footer */
+
+footer {
+  color: white;
+  background-color: #131c27;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+}
+.footer-wrapper h4 {
+  flex: 1 1 40rem;
+}
+
+.footer-wrapper ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 30rem;
+  text-align: center;
+  align-items: center;
+}
+
+.footer-wrapper img {
+  display: flex;
+  align-items: center;
+  width: 3rem;
+}
+
+/* focuss */
+
+button:focus {
+  background-color: rgb(68, 49, 44);
+}
+/* media querry */
+
+@media screen and (max-width: 1180px) {
+  .benefits-head {
+    padding: 3rem 0;
+  }
+
+  .benefits-head h2,
+  .benefits-head h4 {
+    width: 90%;
+  }
+
+  .benefits .cards {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 946px) {
+  #logo {
+    text-align: center;
+    padding: 1rem 0 2rem;
+  }
+
+  nav ul a {
+    padding: 1rem 2rem;
+    transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .moving-cloud-1 {
+    width: 130%;
+    animation: movingCloud 10s infinite alternate ease-in-out;
+  }
+
+  .moving-cloud-2 {
+    width: 140%;
+    opacity: 0.38;
+    animation: movingCloud 7s infinite alternate ease-in-out;
+  }
+
+  .locations-head h4 {
+    background: rgba(19, 28, 39, 0.78);
+    -webkit-text-fill-color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+  }
+
+  .locations-head h2 {
+    text-align: center;
+    background: rgba(19, 28, 39, 0.78);
+    margin-bottom: 0.5rem;
+    color: #a4a4a6;
+    padding: 1rem 0.3rem;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .form-wrapper {
+    width: 90%;
+  }
+
+  form input {
+    padding: 0.7rem 2rem;
+    width: 90%;
+  }
+
+  form textarea {
+    padding: 0.7rem 2rem;
+    width: 90%;
+  }
+
+  .footer-wrapper img {
+    width: 2.2rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  nav {
+    width: 95%;
+    padding: 1.2rem;
+  }
+
+  nav ul li a {
+    font-size: 1.6rem;
+  }
+}
