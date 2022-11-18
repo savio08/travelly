@@ -115,7 +115,7 @@ nav ul a:hover {
 
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
-    url(/img/landing-page.webp);
+    url(img/landing-page.webp);
   height: 91vh;
   background-position: center;
   background-repeat: no-repeat;
